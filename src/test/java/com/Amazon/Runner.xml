@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Test Suite" parallel="false">
+
+    <parameter name="cloud" value="false"/>
+    <parameter name="envName" value="browserstack"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="browserVersion" value="80"/>
+    <parameter name="url" value="https://www.amazon.com"/>
+    <parameter name="platform" value="windows"/>
+    <parameter name="os_version" value="10"/>
+
+    <test name="Automation Login Logout Test">
+        <classes>
+            <class name="com.Amazon.Amazon_LoginLogout"/>
+        </classes>
+    </test>
+
+    <test name="Automation Checkout Test">
+        <classes>
+            <class name="com.Amazon.Amazon_CheckOut"/>
+        </classes>
+    </test>
+
+    <test name="Automation Item Search Test">
+        <classes>
+            <class name="com.Amazon.Amazon_ItemSearch"/>
+        </classes>
+    </test>
+
+</suite>

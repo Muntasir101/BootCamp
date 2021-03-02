@@ -1,0 +1,16 @@
+I Implement 3 different class for 3 feature.
+
+1. LoginLogout: In this class i write 2 @Test methods. One is login and another() is logout().
+               login() and logout() methods are independent. we can use those from anywhere.
+
+2. Item Search: First we need to login(). Then we search item.
+               Implement Data Driven approach. Get search keyword from Excel file.
+               Verify this item. If passed write DONE in exel.
+               Then logout().
+
+3. Checkout:  First we need to login(). Go to cart. proceed to checkout. Then logout.
+
+Every class I finished with logout. So that I can use all class for regression test and create very simple test suite.
+
+I create Runner.xml for test suite. All class can run by this xml.
+
