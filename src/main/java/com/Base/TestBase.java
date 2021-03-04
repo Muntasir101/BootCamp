@@ -283,6 +283,12 @@ public class TestBase {
         javascriptExecutor.executeScript("arguments[0].scrollIntoView(true);", getElementByLinkText(locator));
     }
 
+    public static void scrollingToBottomofAPage() {
+
+        ((JavascriptExecutor) driver)
+                .executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    }
+
 
     // Explicit Wait
     public void waitExplicitlyByXpath(String locator, int seconds) {
