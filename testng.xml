@@ -12,7 +12,7 @@
 
     <test name="Automation Login Logout Test">
         <classes>
-            <class name="com.CNN.CNN_Login"/>
+            <class name="com.CNN.CNN_ReadNewsAllPageVerify"/>
         </classes>
     </test>
 

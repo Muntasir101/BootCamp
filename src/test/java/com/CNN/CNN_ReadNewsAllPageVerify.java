@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-public class ReadNewsAllPageVerify extends TestBase {
+public class CNN_ReadNewsAllPageVerify extends TestBase {
 
     @Test
     public void readAndVerifyAllPage() throws InterruptedException {
@@ -47,7 +47,7 @@ public class ReadNewsAllPageVerify extends TestBase {
         health.click();
         String ActualTitleHealth=driver.getTitle();
         String ExpectedTitleHealth="Health News - CNN";
-        if(ExpectedTitleBusiness.equals(ActualTitleBusiness)){
+        if(ExpectedTitleHealth.equals(ActualTitleHealth)){
             System.out.println("Health news page Verified.");
         }
         else{
@@ -62,7 +62,7 @@ public class ReadNewsAllPageVerify extends TestBase {
         entertainment.click();
         String ActualTitleEntertainment=driver.getTitle();
         String ExpectedTitleEntertainment="Entertainment News - Celebrities, Movies, TV, Music - CNN";
-        if(ExpectedTitleBusiness.equals(ActualTitleBusiness)){
+        if(ExpectedTitleEntertainment.equals(ActualTitleEntertainment)){
             System.out.println("Entertainment news page Verified.");
         }
         else{
@@ -73,11 +73,11 @@ public class ReadNewsAllPageVerify extends TestBase {
         driver.navigate().back();
 
         //Style news
-        WebElement style=driver.findElement(By.xpath("//*[@id=\"header-nav-container\"]/div/div[1]/div/div[2]/nav/ul/li[5]/a"));
+        WebElement style=driver.findElement(By.xpath("//*[@id=\"header-nav-container\"]/div/div[1]/div/div[2]/nav/ul/li[6]/a"));
         style.click();
         String ActualTitleStyle=driver.getTitle();
         String ExpectedTitleStyle="CNN Style - Fashion, beauty, design, art, architecture and luxury";
-        if(ExpectedTitleBusiness.equals(ActualTitleBusiness)){
+        if(ExpectedTitleStyle.equals(ActualTitleStyle)){
             System.out.println("Style news page Verified.");
         }
         else{
@@ -88,11 +88,11 @@ public class ReadNewsAllPageVerify extends TestBase {
         driver.navigate().back();
 
         //Travel news
-        WebElement travel=driver.findElement(By.xpath("//*[@id=\"header-nav-container\"]/div/div[1]/div/div[2]/nav/ul/li[5]/a"));
+        WebElement travel=driver.findElement(By.xpath("//*[@id=\"header-nav-container\"]/div/div[1]/div/div[2]/nav/ul/li[7]/a"));
         travel.click();
         String ActualTitleTravel=driver.getTitle();
         String ExpectedTitTravel="CNN Travel | Global Destinations, Tips & Video";
-        if(ExpectedTitleBusiness.equals(ActualTitleBusiness)){
+        if(ExpectedTitTravel.equals(ActualTitleTravel)){
             System.out.println("Travel news page Verified.");
         }
         else{
