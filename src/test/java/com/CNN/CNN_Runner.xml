@@ -10,9 +10,12 @@
     <parameter name="platform" value="windows"/>
     <parameter name="os_version" value="10"/>
 
-    <test name="Automation Login Logout Test">
+    <test name="CNN Test">
         <classes>
+            <class name="com.CNN.CNN_Login"/>
             <class name="com.CNN.CNN_ReadNewsAllPageVerify"/>
+            <class name="com.CNN.CNN_NewsSearch"/>
+            <class name="com.CNN.CNN_Logout"/>
         </classes>
     </test>
 

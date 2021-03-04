@@ -102,6 +102,5 @@ public class CNN_ReadNewsAllPageVerify extends TestBase {
 
         driver.navigate().back();
 
-        CNN_Logout.logout();
     }
 }
