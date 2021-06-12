@@ -14,7 +14,7 @@ public class Amazon_LoginLogout extends TestBase {
 
     @Test(priority = 0)
     public static void login() throws InterruptedException {
-       String email="oceanize.muntasir@gmail.com";
+       String email="oc....ze.muntasir@gmail.com";
         String password="mizan2010";
 
         WebElement SignElement = driver.findElement(By.xpath("/html/body/div[1]/header/div/div[1]/div[3]/div/a[2]/div"));
